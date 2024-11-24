@@ -35,8 +35,10 @@ function update() {
     })
 
     const actives = document.querySelectorAll('.active')
+    // console.log(actives.length, circle.length)
+    
 
-    progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%'
+    progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%' // calculates width of the active length and circles length so that the line progress 
 
     if(currentActive === 1) {
         prev.disabled = true
